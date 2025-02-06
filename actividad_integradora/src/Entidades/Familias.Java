@@ -8,10 +8,11 @@ public class Familias {
     private int edad_maxima;
     private int num_hijos;
     private String email;
+    private int id_casa_familia;
 
     
 
-    public Familias(int id, String nombre, int edad_minima, int edad_maxima, int num_hijos, String email) {
+    public Familias(int id, String nombre, int edad_minima, int edad_maxima, int num_hijos, String email, int id_casa_familia) {
         this.id = id;
         this.nombre = nombre;
         this.edad_minima = edad_minima;
@@ -22,7 +23,7 @@ public class Familias {
 
 
 
-    public Familias(String nombre, int edad_minima, int edad_maxima, int num_hijos, String email) {
+    public Familias(String nombre, int edad_minima, int edad_maxima, int num_hijos, String email, int id_casa_familia) {
         this.nombre = nombre;
         this.edad_minima = edad_minima;
         this.edad_maxima = edad_maxima;
@@ -105,6 +106,18 @@ public class Familias {
 
     public void setEmail(String email) {
         this.email = email;
+    }
+
+
+
+    public int getId_casa_familia() {
+        return id_casa_familia;
+    }
+
+
+
+    public void setId_casa_familia(int id_casa_familia) {
+        this.id_casa_familia = id_casa_familia;
     }
 
     
